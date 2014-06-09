@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		A05B3B4E19459DE700183078 /* PushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A05B3B4C19459DE700183078 /* PushViewController.m */; };
 		A05B3B4F19459DE700183078 /* PushViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A05B3B4D19459DE700183078 /* PushViewController.xib */; };
+		A05B3B541945A30800183078 /* TTSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A05B3B521945A30800183078 /* TTSViewController.m */; };
+		A05B3B551945A30800183078 /* TTSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A05B3B531945A30800183078 /* TTSViewController.xib */; };
 		D1E2E801193F16770058D0A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E2E800193F16770058D0A9 /* main.m */; };
 		D1E2E804193F16770058D0A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E2E803193F16770058D0A9 /* AppDelegate.m */; };
 		D1E2E807193F16770058D0A9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E2E806193F16770058D0A9 /* ViewController.m */; };
@@ -36,6 +38,9 @@
 		A05B3B4B19459DE700183078 /* PushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PushViewController.h; path = PushTest/PushViewController.h; sourceTree = "<group>"; };
 		A05B3B4C19459DE700183078 /* PushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PushViewController.m; path = PushTest/PushViewController.m; sourceTree = "<group>"; };
 		A05B3B4D19459DE700183078 /* PushViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PushViewController.xib; path = PushTest/PushViewController.xib; sourceTree = "<group>"; };
+		A05B3B511945A30800183078 /* TTSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTSViewController.h; path = TTSTest/TTSViewController.h; sourceTree = "<group>"; };
+		A05B3B521945A30800183078 /* TTSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTSViewController.m; path = TTSTest/TTSViewController.m; sourceTree = "<group>"; };
+		A05B3B531945A30800183078 /* TTSViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TTSViewController.xib; path = TTSTest/TTSViewController.xib; sourceTree = "<group>"; };
 		D1E2E7FB193F16770058D0A9 /* StudyTopic-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StudyTopic-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1E2E7FF193F16770058D0A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1E2E800193F16770058D0A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -86,9 +91,20 @@
 			name = PushTest;
 			sourceTree = "<group>";
 		};
+		A05B3B501945A2B100183078 /* TTSTest */ = {
+			isa = PBXGroup;
+			children = (
+				A05B3B511945A30800183078 /* TTSViewController.h */,
+				A05B3B521945A30800183078 /* TTSViewController.m */,
+				A05B3B531945A30800183078 /* TTSViewController.xib */,
+			);
+			name = TTSTest;
+			sourceTree = "<group>";
+		};
 		D1E2E7F2193F16770058D0A9 = {
 			isa = PBXGroup;
 			children = (
+				A05B3B501945A2B100183078 /* TTSTest */,
 				A05B3B4519459BFE00183078 /* PushTest */,
 				D1E2E822193F16DE0058D0A9 /* IAPTest */,
 				D1E2E7FD193F16770058D0A9 /* StudyTopic-iOS */,
@@ -243,6 +259,7 @@
 			files = (
 				A05B3B4F19459DE700183078 /* PushViewController.xib in Resources */,
 				D1E2E832193F16DE0058D0A9 /* IAP.storyboard in Resources */,
+				A05B3B551945A30800183078 /* TTSViewController.xib in Resources */,
 				D1E2E835193F16DE0058D0A9 /* IAPPurchaseViewController.xib in Resources */,
 				D1E2E80A193F16770058D0A9 /* Main.storyboard in Resources */,
 				D1E2E80C193F16770058D0A9 /* Images.xcassets in Resources */,
@@ -263,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A05B3B541945A30800183078 /* TTSViewController.m in Sources */,
 				D1E2E807193F16770058D0A9 /* ViewController.m in Sources */,
 				D1E2E838193F16DE0058D0A9 /* IAPTestViewController.m in Sources */,
 				D1E2E804193F16770058D0A9 /* AppDelegate.m in Sources */,

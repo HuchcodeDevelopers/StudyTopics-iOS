@@ -32,12 +32,21 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DrB-Sf-3Ws">
-                                <rect key="frame" x="103" y="180" width="117" height="30"/>
+                                <rect key="frame" x="103" y="177" width="117" height="30"/>
                                 <state key="normal" title="Push Notification">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="RIt-pS-H4k" kind="push" id="Dj9-rR-EeW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fib-0m-IR2">
+                                <rect key="frame" x="103" y="225" width="143" height="30"/>
+                                <state key="normal" title="TTS (Text to Speech)">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ha0-9g-3Hj" kind="push" id="WSJ-yU-mE8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -67,6 +76,15 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="252" translatesAutoresizingMaskIntoConstraints="NO" id="xR1-1e-DMM">
+                                <rect key="frame" x="34" y="216" width="252" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">This is test for Push Notification
+It will send push message server and receive it.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -74,7 +92,43 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EFC-m4-6tI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1108" y="155"/>
+            <point key="canvasLocation" x="1144" y="120"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gRc-Ys-kKf">
+            <objects>
+                <viewController id="ha0-9g-3Hj" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VIy-Fi-gHW"/>
+                        <viewControllerLayoutGuide type="bottom" id="mBR-KT-I9s"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gJK-8y-7SN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TTS (Text to Speech)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZ3-dZ-OEe">
+                                <rect key="frame" x="80" y="136" width="160" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="252" translatesAutoresizingMaskIntoConstraints="NO" id="Wcs-S8-MO8">
+                                <rect key="frame" x="34" y="174" width="252" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">This is test for TTS.
+It will speak text on the webview.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eGO-yv-VSx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N7l-bA-qu4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1144" y="730"/>
         </scene>
         <!--Test View Controller-->
         <scene sceneID="pOY-jl-qOM">
@@ -122,7 +176,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XmX-46-vg4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1108" y="-490"/>
+            <point key="canvasLocation" x="1144" y="-490"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="dzR-Ad-6gE">
@@ -148,7 +202,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K0y-Jb-3cN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1533" y="-490"/>
+            <point key="canvasLocation" x="1569" y="-490"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UfH-fn-Kw6">
