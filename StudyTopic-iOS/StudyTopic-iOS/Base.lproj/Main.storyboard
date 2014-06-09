@@ -23,12 +23,21 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gsc-rn-nJl">
-                                <rect key="frame" x="103" y="178" width="115" height="30"/>
+                                <rect key="frame" x="103" y="129" width="115" height="30"/>
                                 <state key="normal" title="In-App Purchase">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="OJk-VW-psU" kind="push" id="Egp-Rl-9r1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DrB-Sf-3Ws">
+                                <rect key="frame" x="103" y="180" width="117" height="30"/>
+                                <state key="normal" title="Push Notification">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="RIt-pS-H4k" kind="push" id="Dj9-rR-EeW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -39,6 +48,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="572" y="120"/>
+        </scene>
+        <!--Push View Controller-->
+        <scene sceneID="fGZ-mU-q9r">
+            <objects>
+                <viewController id="RIt-pS-H4k" customClass="PushViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="byJ-rJ-AKS"/>
+                        <viewControllerLayoutGuide type="bottom" id="M3m-XC-nwJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NhF-ka-w4R">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Push Notification Test" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0KD-bP-V4v">
+                                <rect key="frame" x="77" y="164" width="167" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="q16-Rb-ogL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EFC-m4-6tI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1108" y="155"/>
         </scene>
         <!--Test View Controller-->
         <scene sceneID="pOY-jl-qOM">
