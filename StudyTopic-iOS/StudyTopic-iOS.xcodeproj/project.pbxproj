@@ -11,6 +11,9 @@
 		A05B3B4F19459DE700183078 /* PushViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A05B3B4D19459DE700183078 /* PushViewController.xib */; };
 		A05B3B541945A30800183078 /* TTSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A05B3B521945A30800183078 /* TTSViewController.m */; };
 		A05B3B551945A30800183078 /* TTSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A05B3B531945A30800183078 /* TTSViewController.xib */; };
+		A6ABD68F1958100900F8B260 /* ck.pem in Resources */ = {isa = PBXBuildFile; fileRef = A6ABD68E1958100900F8B260 /* ck.pem */; };
+		A6ABD6911958101600F8B260 /* notificaitonPush.certSigningRequest in Resources */ = {isa = PBXBuildFile; fileRef = A6ABD6901958101600F8B260 /* notificaitonPush.certSigningRequest */; };
+		A6ABD6941958105400F8B260 /* pushnotification-sender.php in Resources */ = {isa = PBXBuildFile; fileRef = A6ABD6931958105400F8B260 /* pushnotification-sender.php */; };
 		D1E2E801193F16770058D0A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E2E800193F16770058D0A9 /* main.m */; };
 		D1E2E804193F16770058D0A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E2E803193F16770058D0A9 /* AppDelegate.m */; };
 		D1E2E807193F16770058D0A9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E2E806193F16770058D0A9 /* ViewController.m */; };
@@ -41,6 +44,10 @@
 		A05B3B511945A30800183078 /* TTSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTSViewController.h; path = TTSTest/TTSViewController.h; sourceTree = "<group>"; };
 		A05B3B521945A30800183078 /* TTSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTSViewController.m; path = TTSTest/TTSViewController.m; sourceTree = "<group>"; };
 		A05B3B531945A30800183078 /* TTSViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TTSViewController.xib; path = TTSTest/TTSViewController.xib; sourceTree = "<group>"; };
+		A6ABD68E1958100900F8B260 /* ck.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ck.pem; sourceTree = "<group>"; };
+		A6ABD6901958101600F8B260 /* notificaitonPush.certSigningRequest */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = notificaitonPush.certSigningRequest; sourceTree = "<group>"; };
+		A6ABD6921958102300F8B260 /* huchcodepushnotificationStudyTopiciOS.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = huchcodepushnotificationStudyTopiciOS.mobileprovision; sourceTree = "<group>"; };
+		A6ABD6931958105400F8B260 /* pushnotification-sender.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = "pushnotification-sender.php"; sourceTree = "<group>"; };
 		D1E2E7FB193F16770058D0A9 /* StudyTopic-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StudyTopic-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1E2E7FF193F16770058D0A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1E2E800193F16770058D0A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -139,6 +146,10 @@
 		D1E2E7FE193F16770058D0A9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A6ABD6931958105400F8B260 /* pushnotification-sender.php */,
+				A6ABD6921958102300F8B260 /* huchcodepushnotificationStudyTopiciOS.mobileprovision */,
+				A6ABD68E1958100900F8B260 /* ck.pem */,
+				A6ABD6901958101600F8B260 /* notificaitonPush.certSigningRequest */,
 				D1E2E7FF193F16770058D0A9 /* Info.plist */,
 				D1E2E800193F16770058D0A9 /* main.m */,
 			);
@@ -226,6 +237,7 @@
 				TargetAttributes = {
 					D1E2E7FA193F16770058D0A9 = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = 8P86C6J5TZ;
 					};
 					D1E2E810193F16770058D0A9 = {
 						CreatedOnToolsVersion = 6.0;
@@ -261,8 +273,11 @@
 				D1E2E832193F16DE0058D0A9 /* IAP.storyboard in Resources */,
 				A05B3B551945A30800183078 /* TTSViewController.xib in Resources */,
 				D1E2E835193F16DE0058D0A9 /* IAPPurchaseViewController.xib in Resources */,
+				A6ABD68F1958100900F8B260 /* ck.pem in Resources */,
 				D1E2E80A193F16770058D0A9 /* Main.storyboard in Resources */,
+				A6ABD6911958101600F8B260 /* notificaitonPush.certSigningRequest in Resources */,
 				D1E2E80C193F16770058D0A9 /* Images.xcassets in Resources */,
+				A6ABD6941958105400F8B260 /* pushnotification-sender.php in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,7 +361,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development IOS Push Services: com.huchcode.StudyTopic-iOS";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development IOS Push Services: com.huchcode.StudyTopic-iOS";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -387,7 +403,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development IOS Push Services: com.huchcode.StudyTopic-iOS";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development IOS Push Services: com.huchcode.StudyTopic-iOS";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -410,10 +427,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "StudyTopic-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -422,10 +442,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "StudyTopic-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
